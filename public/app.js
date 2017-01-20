@@ -1,4 +1,5 @@
 'use strict';
+
 function setColor(ctx, next) {
   $('button').css('background-color', '#' + ctx.params.color);
   $('form')[0].color.value = ctx.params.color;
@@ -24,7 +25,7 @@ $(function() {
   const f = $('form')[0];
   page();
 
-  $('input').on('change', function(){
+  $('body').on('change', 'input', function(){
     const path = [f.color.value, f.radius.value, f.phrase.value].filter(v => v).join('/')
     page.show(`/${path}`);
   })
