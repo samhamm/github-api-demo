@@ -3,12 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>GitHub API Demo</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/page.js/1.7.1/page.min.js" defer></script>
+    <script src="/app.js" defer></script>
   </head>
   <body>
-    <h1>Sam's GitHub Stuffs</h1>
-    <div id='results'></div>
-    <script src="githubtoken.js"></script>
-    <script src="app.js"></script>
+    <h1>Sam's Button Builder</h1>
+    <nav>
+      <form>
+        <ul>
+          <li><label>Color: <input type="text" name="color"></label></li>
+          <li><label>Radius: <input type="number" name="radius"></label></li>
+          <li><label>Phrase: <input type="text" name="phrase"></label></li>
+        </ul>
+      </form>
+    </nav>
+    <main>
+      <p>Your button: <button>Try it!</button></p>
+    </main>
   </body>
 </html>
